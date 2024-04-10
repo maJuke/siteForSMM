@@ -19,6 +19,7 @@ public class MainController {
     private final ExampleService exampleService;
     private final ExampleRepository exampleRepository;
 
+
     @GetMapping("/main")
     private String mainPage(Model model) {
         model.addAttribute("examples", exampleService.listExamples());
